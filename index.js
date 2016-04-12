@@ -1,3 +1,3 @@
 module.exports = function (cb) {
-  cb(null, 'hello webtasks 9!');
+  cb(null, 'hello webtasks 10!');
 }
