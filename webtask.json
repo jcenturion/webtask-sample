@@ -8,4 +8,10 @@
   "keywords": [
     "auth0"
   ]
+  "secrets" {
+    "KEY": {
+      "description": "Some secret key",
+      "type": "password"
+    }
+  }
 }
