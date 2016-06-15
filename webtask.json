@@ -1,0 +1,11 @@
+{
+  "title": "Webtask Sample",
+  "name": "webtask-sample",
+  "version": "1.0.0",
+  "author": "javier.centurion@auth0.com",
+  "description": "A Sample Extension",
+  "type": "application",
+  "keywords": [
+    "auth0"
+  ]
+}
