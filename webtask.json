@@ -7,8 +7,8 @@
 	"type": "application",
 	"keywords": [
 		"auth0"
-	]
-	"secrets" {
+	],
+	"secrets": {
 		"KEY": {
 			"description": "Some secret key",
 			"type": "password"
