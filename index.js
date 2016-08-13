@@ -1,5 +1,12 @@
-"use latest";
+var express    = require('express');
+var Webtask    = require('webtask-tools');
+var bodyParser = require('body-parser');
+var app = express();
 
-/* Enable latest ESvNext features through babel with "use latest";
-   at the top of the script. */
-module.exports = cb => cb(null, "Welcome to ES6 arrows");
+app.use(bodyParser.json());
+
+app.get('/', function (req, res) {
+  res.sendStatus(200);
+});
+
+module.exports = Webtask.fromExpress(app);
