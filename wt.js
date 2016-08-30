@@ -6,7 +6,6 @@ var app = express();
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
-  console.log('test');
   res.sendStatus(200);
 });
 
