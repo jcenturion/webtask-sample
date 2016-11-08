@@ -6,8 +6,7 @@ var app = express();
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
-  res.sendStatus(200); 
+  res.sendStatus(200);
 });
 
-module.exports = Webtask.fromExpress(app);      
-  
+module.exports = Webtask.fromExpress(app);
