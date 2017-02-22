@@ -9,6 +9,6 @@ app.get('/', function (req, res) {
   res.sendStatus(200);
 });
 
-// test 2 
+// test
 
 module.exports = Webtask.fromExpress(app);
