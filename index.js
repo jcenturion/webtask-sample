@@ -1,4 +1,4 @@
-(function (require) {
+module.exports = function (require) {
   var express = require('express');
   var app = express();
   
@@ -7,4 +7,4 @@
   });
   
   return app;
-})
+};
