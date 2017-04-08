@@ -2,7 +2,7 @@ module.exports = function (express) {
   var app = express();
   
   app.get('/', function (req, res) {
-    res.sendStatus(200);
+    res.status(200).send('working');
   });
   
   return app;
