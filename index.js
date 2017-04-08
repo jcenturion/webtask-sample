@@ -1,4 +1,4 @@
-module.exports = function (require) {
+function (require) {
   var express = require('express');
   var app = express();
   
