@@ -1,4 +1,4 @@
-function (require) {
+(function (require) {
   var express = require('express');
   var app = express();
   
@@ -7,4 +7,4 @@ function (require) {
   });
   
   return app;
-}
+})
