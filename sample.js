@@ -1,4 +1,4 @@
-var express    = require('/data/_verquire/express');
+var express    = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
