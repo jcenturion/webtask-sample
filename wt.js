@@ -1,14 +1,3 @@
-var express    = require('express');
-var Webtask    = require('webtask-tools');
-var bodyParser = require('body-parser');
-var app = express();
-
-app.use(bodyParser.json());
-
-app.get('/', function (req, res) {
-  res.sendStatus(200);
-});
-
-// test
-
-module.exports = Webtask.fromExpress(app);
+module.exports = function(context, cb) {
+  cb(null, { hello: context.data.name || 'Anonymous' });
+};
