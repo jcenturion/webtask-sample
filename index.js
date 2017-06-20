@@ -2,7 +2,7 @@ var Request = require("superagent")
 var url = 'https://api.github.com/repos/jcenturion/webtask-sample/contents/README.md?ref=master'
     
 module.exports = function(ctx, cb) {
-  // TODO: Pull request change - test2
+  // TODO: Pull request change
   Request
     .get(url)
     .end((err, res) => {
