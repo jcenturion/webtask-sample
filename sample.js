@@ -1,8 +1,25 @@
-var express    = require('express');
-var app = express();
+// 'use latest';
 
-app.get('/', function (req, res) {
-  res.status(200).send('node-js-compiler');
+const bodyParser = require('body-parser');
+const express = require('express');
+const Webtask = require('webtask-tools');
+
+const server = express();
+server.use(bodyParser.json());
+
+server.post('/', (req, res) => {
+  console.log('test');
+  res.json({
+    version: '1.0',
+    response: {
+      outputSpeech: {
+        type: 'PlainText',
+        text: 'Long pants, short sleeves, jacket in the afternoon',
+      },
+      shouldEndSession: true,
+    },
+    sessionAttributes: {},
+  });
 });
 
-module.exports = app;
+module.exports = Webtask.fromExpress(server);
