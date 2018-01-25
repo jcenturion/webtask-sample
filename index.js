@@ -5,4 +5,4 @@ module.exports = function(context, cb) {
   cb(null, { hello: context.query.name || 'Anonymous' });
 }; 
 
-// test 
+// tes
