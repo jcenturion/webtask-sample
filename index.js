@@ -1,3 +1,6 @@
+/**
+* @param context {WebtaskContext}
+*/
 module.exports = function(context, cb) {
-  cb(null, { hello: context.data.name || 'Anonymous' });
-};  // test64
+  cb(null, { hello: context.query.name || 'Anonymous' });
+};
