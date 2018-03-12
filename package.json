@@ -4,20 +4,18 @@
   "description": "This webtask sample",
   "author": "javier.centurion@auth0.com",
   "license": "MIT",
-  "webtaskio": [
-    {
-      "name": "static-content-webtask",
-      "secrets": [{
-        "name": "content-type",
-        "description": "The content-type of the static file",
-        "placeholder": "e.g. text/javascript"
-      }],
-      "meta": [{
-        "name": "wt-compiler",
-        "description": "Static compiler",
-        "value": "https://raw.githubusercontent.com/tjanczuk/wtc/master/static.js",
-        "placeholder": "URL to static compiler"
-      }]
-    }
-  ]
+  "webtaskio": {
+    "name": "static-content-webtask",
+    "secrets": [{
+      "name": "content-type",
+      "description": "The content-type of the static file",
+      "placeholder": "e.g. text/javascript"
+    }],
+    "meta": [{
+      "name": "wt-compiler",
+      "description": "Static compiler",
+      "value": "https://raw.githubusercontent.com/tjanczuk/wtc/master/static.js",
+      "placeholder": "URL to static compiler"
+    }]
+  }
 }
