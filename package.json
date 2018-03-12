@@ -10,7 +10,7 @@
       "secrets": [{
         "name": "content-type",
         "description": "The content-type of the static file",
-        "placeholder": "e.g. text/plain"
+        "placeholder": "e.g. text/javascript"
       }],
       "meta": [{
         "name": "wt-compiler",
