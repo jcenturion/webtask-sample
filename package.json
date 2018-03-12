@@ -6,7 +6,7 @@
   "license": "MIT",
   "webtaskio": [
     {
-      "name": "Secure GitHub Webhook",
+      "name": "static-content-webtask",
       "secrets": [{
         "name": "content-type",
         "description": "The content-type of the static file",
